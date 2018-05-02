@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>待审图片</title>
+    <link rel="stylesheet" href="../css/pretrial.css">
+</head>
+<body>
+<header>
+    <div class="header-fil">
+        <a href="javascript:void(0)" class="logo" title="易图文"></a>
+        <ul class="header-icon">
+            <li>
+                <a href="../html/pretrialPicture.html">
+                    过审图片
+                </a>
+            </li>
+            <li class="current">
+                <a href="../html/pendingPicture.html">
+                    待审图片
+                </a>
+            </li>
+            <li>
+                <a href="../html/havePictures.html">
+                    已配图文章
+                </a>
+            </li>
+            <li>
+                <a href="../html/noPictures.html">
+                    未配图文章
+                </a>
+            </li>
+        </ul>
+        <div class="user-icon">
+            <a href="javascript:void(0)" class="me">
+                <span>陈编辑</span>
+            </a>
+            <div class="icon-show">
+                <ul>
+                    <li><a href="../html/category.html">设置</a></li>
+                    <li><a href="javascript:void (0)">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <section class="sheets">
+        <span>总共(650)</span>>
+        <span>天气(285)张</span>+
+        <span>体育(365)张</span>
+    </section>
+    <div class="search-opt">
+        <div class="opt-list clearfix">
+            <ul class="opt-con brand-con">
+                <li class="opt-title">
+                    类别选择:
+                </li>
+                <li>
+                    <a href="javascript:void(0)">全部<i>(5491张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">经济<i>(541张)</i></a>
+                </li>
+                <li class="active">
+                    <a href="javascript:void(0)">体育<i>(541张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">植物<i>(541张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">民生<i>(541张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">美文<i>(591张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">美文<i>(591张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">美国<i>(491张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">海洋<i>(591张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">军事<i>(5491张)</i></a>
+                </li>
+            </ul>
+            <ul class="opt-con">
+                <li class="opt-title">
+
+                </li>
+                <li>
+                    <a href="javascript:void(0)">教育<i>(1121张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">经济<i>(491张)</i></a>
+                </li>
+                <li class="active">
+                    <a href="javascript:void(0)">体育<i>(591张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">植物<i>(491张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">民生<i>(591张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">美文<i>(541张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">美文<i>(541张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">美国<i>(591张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">海洋<i>(591张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">军事<i>(541张)</i></a>
+                </li>
+            </ul>
+            <ul class="opt-con">
+                <li class="opt-title">
+
+                </li>
+                <li>
+                    <a href="javascript:void(0)">民生<i>(1121张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">经济<i>(549张)</i></a>
+                </li>
+                <li class="active">
+                    <a href="javascript:void(0)">体育<i>(549张)</i></a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">植物<i>(549张)</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="picture-tit">
+        <div class="date">
+            <label>时间范围:</label>
+            <input type="text" id="test1" placeholder="2017-01-01 至 2018-01-01" class="time-range all-date-set">
+        </div>
+        <div class="tit-select">
+            <label>排序:</label>
+            <select class="select1" id="" name="">
+                <option value="时间倒序">时间倒序</option>
+                <option value="空间倒序">空间倒序</option>
+            </select>
+        </div>
+        <div class="tit-select area-select">
+            <label>地区标签:</label>
+            <div class="wrap-all">
+                <select class="select2">
+                    <option>全部</option>
+                    <option>北京</option>
+                    <option>上海</option>
+                </select>
+            </div>
+        </div>
+        <div class="pic-input">
+            <label>图片标签:</label>
+            <input type="text" placeholder="请输入文字">
+            <button class="hover-bg">筛选</button>
+        </div>
+        <div class="pic-upload">
+            <a href="javascript:void(0)" class="upload-blue" data-title="m-upload">图片上传</a>
+        </div>
+    </div>
+    <div class="wrap">
+        <ul>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="grid-item">
+                <div class="grid-a">
+                    <div class="top-thumbnail">
+                        <!-- 选中-->
+                        <div class="input1">
+                            <div class="inputs">
+                                <input type="checkbox" class="check goods-check goodsCheck">
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)"><img class="pic-margin" src="../images/pic.jpg"></a>
+                        <!--四个按钮-->
+                        <div class="input-write">
+                            <p class="wri-bg"></p>
+                            <div class="write-cont">
+                                <a href="javascript:void(0)" class="cont1" data-title="m-examine-notice"></a>
+                                <a href="javascript:void(0)" class="cont2" data-title="m-detail"></a>
+                                <a href="javascript:void(0)" class="cont3" data-title="m-edit"></a>
+                                <a href="javascript:void(0)" class="cont4" data-title="m-delete"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-thumbnail">
+                        <div class="thu-two">
+                            <!--图片标签-->
+                            <div class="new-label">
+                                <label>图片标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                            <div class="new-area">
+                                <label>地区标签</label>
+                                <div class="table-lab">
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                                    <a href="javascript:void(0)" class="add">+添加</a>
+                                    <a href="javascript:void(0)" class="add-su">确认</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thu-one">
+                            <div class="pic-label">
+                                <label>图片标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">广东</a>
+                                    <a href="javascript:void(0)">广州</a>
+                                    <a href="javascript:void(0)">天河</a>
+                                </p>
+                            </div>
+                            <div class="area-label">
+                                <label>地区标签</label>
+                                <p>
+                                    <a href="javascript:void(0)">科技</a>
+                                    <a href="javascript:void(0)">金融</a>
+                                    <a href="javascript:void(0)">招行</a>
+                                </p>
+                            </div>
+                            <div class="category">
+                                <label>类别</label>
+                                <p>时间</p>
+                            </div>
+                            <div class="upload-time">
+                                <label>上传时间</label>
+                                <p>2018-03-24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="foot-left">
+            <div class="inputs">
+                <input type="checkbox" class="check goods-check" id="AllCheck">
+            </div>
+            <em>全选(<i id="allNum">5281</i>)</em>
+            <button class="examine">审核</button>
+            <a href="javascript:void(0)" data-title="m-delete2">删除</a>
+        </div>
+        <div class="foot-right">
+            <div class="foot-page clearfix">
+                <button class="lastpage">上一页</button>
+                <ul>
+                    <li class="act"><a href="javascript:void(0)">1</a> </li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li><a href="javascript:void(0)">6</a></li>
+                    <li><a href="javascript:void(0)" class="more">...</a></li>
+                </ul>
+                <button class="nextpage">下一页</button>
+                <div class="jump-page">
+                    跳至
+                    <input type="text" size="1">
+                    页
+                </div>
+                <button class="sure">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--弹窗-->
+<div id="al">
+<div id="modal">
+    <!--删除提示-->
+    <div class="m-con m-delete">
+        <div class="del-header">
+            <em>删除提示</em>
+            <a href="javascript:void(0)" class="close"></a>
+        </div>
+        <div class="del-content">
+            <i class="i-notice"></i>确定要删除图片?
+        </div>
+        <div class="del-footer">
+            <div class="del-but">
+                <button class="del-sure">确定</button>
+                <button class="close">取消</button>
+            </div>
+        </div>
+    </div>
+    <!--上传图片-->
+    <div class="m-con m-upload">
+        <div class="up-header">
+            <em>上传图片</em>
+            <a href="javascript:void(0)" class="close"></a>
+        </div>
+        <div class="up-content">
+            <ul>
+                <li class="clearfix2">
+                    <em><i>*</i>图片 :</em>
+                    <div class="upload-picture">
+                        <input id="img_input2" multiple="" type="file" accept="image/*" />
+                        <label for="img_input2" id="img_label2">
+                            <i class="img-style"><img src="../images/upload.png"></i>
+                            本地上传
+                            <i class="fa fa-plus fa-lg"></i></label>
+                        <div id="preview_box2"></div>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space">水印 :</em>
+                    <div class="upload-watermark">
+                        <div class="selected">
+                            <select>
+                                <option>请选择</option>
+                            </select>
+                            <i></i>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space">类别 :</em>
+                    <div class="upload-category">
+                        <div id="mu1" class="mults"></div>
+                        <span class="fonts-m">可多选</span>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space">公共属性图 :</em>
+                    <div class="public">
+                        <div class="opt">
+                            <input class="magic-radio" type="radio" name="radio" id="r1" value="option1">
+                            <label for="r1">是</label>
+                        </div>
+                        <div class="opt">
+                            <input class="magic-radio" type="radio" name="radio" id="r2" value="option2" checked>
+                            <label for="r2">否</label>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space">是否有歧义 :</em>
+                    <div class="public">
+                        <div class="opt2">
+                            <input class="magic-radio" type="radio" name="ambiguity2" id="l6" value="option20">
+                            <label for="l6" >是</label>
+                        </div>
+                        <div class="opt2">
+                            <input class="magic-radio" type="radio" name="ambiguity2" id="l7" value="option21" checked>
+                            <label for="l7">否</label>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space"><i>*</i>图片标签 :</em>
+                    <div class="picture-table">
+                        <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="广州" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="天河" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="珠江" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="猎德" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="大桥" class="input-ze" size="3"><i></i></span>
+                        <a href="javascript:void(0)" class="add-pic">+添加</a>
+                        <a href="javascript:void(0)" class="add-su">确认</a>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space"><i>*</i>地区标签 :</em>
+                    <div class="picture-table">
+                        <a href="javascript:void(0)" class="add-pic">+添加</a>
+                        <a href="javascript:void(0)" class="add-su">确认</a>
+                    </div>
+
+                </li>
+            </ul>
+            <p class="toop">（提示：地区标签要填写图片所在地区及其上一级位置的标签）</p>
+        </div>
+        <div class="up-foot">
+            <div class="up-but">
+                <button class="up-sure">确定</button>
+                <button class="close">取消</button>
+            </div>
+        </div>
+    </div>
+    <!--编辑图片-->
+    <div class="m-con m-edit">
+        <div class="up-header">
+            <em>编辑图片</em>
+            <a href="javascript:void(0)" class="close"></a>
+        </div>
+        <div class="up-content">
+            <ul>
+                <li class="clearfix2">
+                    <em><i>*</i>图片 :</em>
+                    <div class="delete-picture">
+                        <div class="pic-one"><img src="../images/pic5.jpg"></div>
+                        <div class="delete-btn">
+                            <a href="javascript:void(0)">删除</a>
+
+                        </div>
+                        <div class="btn-modal"></div>
+                    </div>
+
+                </li>
+                <li class="clearfix2">
+                    <em class="space">水印 :</em>
+                    <div class="upload-watermark">
+                        <div class="selected">
+                            <select>
+                                <option>请选择</option>
+                            </select>
+                            <i></i>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space">类别 :</em>
+                    <div class="upload-category">
+                        <div id="mu2" class="mults"></div>
+                        <span class="fonts-m">可多选</span>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space">公共属性图 :</em>
+                    <div class="public">
+                        <div class="opt">
+                            <input class="magic-radio" type="radio" name="radio2" id="l1" value="option6">
+                            <label for="l1">是</label>
+                        </div>
+                        <div class="opt">
+                            <input class="magic-radio" type="radio" name="radio2" id="l2" value="option7" checked>
+                            <label for="l2">否</label>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space">是否有歧义 :</em>
+                    <div class="public">
+                        <div class="opt2">
+                            <input class="magic-radio" type="radio" name="ambiguity" id="l3" value="option8">
+                            <label for="l3" >是</label>
+                        </div>
+                        <div class="opt2">
+                            <input class="magic-radio" type="radio" name="ambiguity" id="l4" value="option9" checked>
+                            <label for="l4">否</label>
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space"><i>*</i>图片标签 :</em>
+                    <div class="picture-table table-editor">
+                        <span><input type="text" value="广东" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="广州" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="天河" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="珠江" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="猎德" class="input-ze" size="3"><i></i></span>
+                        <span><input type="text" value="大桥" class="input-ze" size="3"><i></i></span>
+                        <a href="javascript:void(0)" class="add-pic">+添加</a>
+                        <a href="javascript:void(0)" class="add-su">确认</a>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space"><i>*</i>地区标签 :</em>
+                    <div class="picture-table">
+                        <a href="javascript:void(0)" class="add-pic">+添加</a>
+                        <a href="javascript:void(0)" class="add-su">确认</a>
+                    </div>
+
+                </li>
+            </ul>
+            <p class="toop">（提示：地区标签要填写图片所在地区及其上一级位置的标签）</p>
+        </div>
+        <div class="up-foot">
+            <div class="up-but">
+                <button class="up-sure">确定</button>
+                <button class="close">取消</button>
+            </div>
+        </div>
+    </div>
+    <!--查看图片-->
+    <div class="m-con m-detail">
+        <div class="up-header">
+            <em>图片详情</em>
+            <a href="javascript:void(0)" class="close"></a>
+        </div>
+        <div class="up-content">
+            <ul>
+                <li class="clearfix2">
+                    <em><i>*</i>图片 :</em>
+                    <div class="delete-picture">
+                        <div class="pic-one"><img src="../images/pic5.jpg"></div>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space2">水印 :</em>
+                    <div class="upload-watermark">
+                        <p>光明网版权所有</p>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space2">类别 :</em>
+                    <div class="upload-category">
+                        <p>美食</p>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space2">公共属性图 :</em>
+                    <div class="public">
+                        <p>是</p>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space2">是否有歧义 :</em>
+                    <div class="public">
+                        <p>否</p>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space"><i>*</i>图片标签 :</em>
+                    <div class="picture-table">
+                        <a href="javascript:void (0)">广东</a>
+                        <a href="javascript:void (0)">广州</a>
+                        <a href="javascript:void (0)">天河</a>
+                        <a href="javascript:void (0)">珠江</a>
+                        <a href="javascript:void (0)">猎德</a>
+                        <a href="javascript:void (0)">大桥</a>
+                    </div>
+                </li>
+                <li class="clearfix2">
+                    <em class="space"><i>*</i>地区标签 :</em>
+                    <div class="picture-table">
+                        <a href="javascript:void (0)">广东</a>
+                        <a href="javascript:void (0)">广州</a>
+                    </div>
+
+                </li>
+                <li class="clearfix2">
+                    <em class="space2">操作记录 :</em>
+                    <div class="operation-record">
+                        <div class="record-number">
+                            <i class="date">2018年04月01日</i>
+                            <i class="time">12:30:20</i>
+                            <i class="person">黄主任</i>上传了图片
+                        </div>
+                        <div class="record-number">
+                            <i class="date">2018年04月01日</i>
+                            <i class="time">12:30:20</i>
+                            <i class="person">刘主任</i>上传了图片
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="up-foot">
+            <div class="up-but">
+                <button class="up-sure">确定</button>
+                <button class="close">取消</button>
+            </div>
+        </div>
+    </div>
+    <!--审核提示-->
+    <div class="m-con m-examine-notice">
+        <div class="del-header">
+            <em>审核提示</em>
+            <a href="javascript:void(0)" class="close"></a>
+        </div>
+        <div class="del-content">
+            确定审核通过，保存至过审图片？
+        </div>
+        <div class="del-footer">
+            <div class="del-but">
+                <button class="del-sure">确定</button>
+                <button class="close">取消</button>
+            </div>
+        </div>
+    </div>
+    <!--删除提示-->
+    <div class="m-con m-delete2">
+        <div class="del-header">
+            <em>删除提示</em>
+            <a href="javascript:void(0)" class="close"></a>
+        </div>
+        <div class="del-content">
+            <i class="i-notice"></i>确定要删除选中图片?
+        </div>
+        <div class="del-footer">
+            <div class="del-but">
+                <button class="del-sure">确定</button>
+                <button class="close">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalbg"></div>
+</div>
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/picture.js"></script>
+<script src="../libs/laydate/laydate.js"></script>
+<script src="../libs/multsel/multsel.js"></script>
+<script src="../libs/nicescroll/jquery.nicescroll.js"></script>
+<script>
+    $("#mu1").multiselectInit({
+        "selectData":[
+            {"colId":1,"colValue":"类别1"},
+            {"colId":2,"colValue":"类别2"},
+            {"colId":3,"colValue":"类别"},
+            {"colId":4,"colValue":"类别4"},
+            {"colId":5,"colValue":"类别1"},
+            {"colId":6,"colValue":"类别2"},
+            {"colId":7,"colValue":"类别"},
+            {"colId":8,"colValue":"类别4"},
+            {"colId":9,"colValue":"类别1"},
+            {"colId":10,"colValue":"类别2"},
+            {"colId":11,"colValue":"类别"},
+            {"colId":12,"colValue":"类别4"},
+            {"colId":13,"colValue":"类别1"},
+            {"colId":14,"colValue":"类别2"},
+            {"colId":15,"colValue":"类别"},
+            {"colId":16,"colValue":"类别4"},
+            {"colId":17,"colValue":"类别1"},
+            {"colId":18,"colValue":"类别2"},
+            {"colId":19,"colValue":"类别"},
+            {"colId":20,"colValue":"类别4"},
+            {"colId":21,"colValue":"类别"}
+
+        ],
+        "isMulti":true,//是否多选
+        "inputId":"testValue",//输入框的id
+        "checkStyle":"fg"//选择的样式
+    });
+    $("#mu2").multiselectInit({
+        "selectData":[
+            {"colId":1,"colValue":"类别2"},
+            {"colId":2,"colValue":"类别3"},
+            {"colId":3,"colValue":"类别4"},
+            {"colId":4,"colValue":"类别5"},
+            {"colId":5,"colValue":"类别6"},
+            {"colId":6,"colValue":"类别7"},
+        ],
+        "isMulti":true,//是否多选
+        "inputId":"testValue",//输入框的id
+        "checkStyle":"fg"//选择的样式
+    });
+    $(".selectShow").append('<i class="fun-close">'+'</i>');
+    $(document).ready(function(){
+        myclick('.select1','.select-wrap','.select_inner');
+        myclick('.select2','.wrap-all','.select_inner');
+        laydate.render({
+            elem: '#test1'
+            ,range: '至'
+        });
+        laydate.render({
+            elem: '#test2'
+            ,range: '至'
+        });
+        containsiss();
+        $('.add').click(function(){
+            $(this).before('<span><input type="text" value="" class="input-ze" size="3"><i></i></span>');
+            $(this).parent().find(".add-su").css("display","inline-block");
+            $(this).hide();
+            $(this).parent().find("span input").focus()
+        });
+        $('.add-pic').click(function(){
+            $(this).before('<span><input type="text" value="" class="input-ze" size="3"><i></i></span>');
+            $(this).parent().find(".add-su").css("display","inline-block");
+            $(this).hide();
+            $(this).parent().find("span input").focus()
+        });
+        $('.add-su').click(function(){
+            $(this).parent().find(".add-pic").show();
+            $(this).parent().find(".add").show();
+            $(this).hide();
+        });
+        $('.picture-table,.thu-two').on('click','input',function(){
+            $(this).parents(".picture-table").find(".add-pic").hide();
+            $(this).parents(".table-lab").find(".add").hide();
+            $(this).parents(".picture-table,.table-lab").find(".add-su").css("display","inline-block");
+        });
+        $('.up-content .picture-table,.bottom-thumbnail .thu-two').on('input propertychange','.input-ze', function() {
+            var $this = $(this);
+            var text_length = $this.val().length;
+            var current_width = parseInt(text_length) *10;
+            $this.css("width",current_width+"px");
+        });
+        $(".up-content .picture-table").on('click',"span i",function(){
+            $(this).parents(".picture-table").find(".add-pic").show();
+            $(this).parents(".picture-table").find(".add-su").css("display","none");
+            $(this).parents("span").remove();
+        });
+        $(".thu-two .table-lab").on('click',"span i",function(){
+            $(this).parents(".thu-two").find(".add").show();
+            $(this).parents(".thu-two").find(".add-su").css("display","none");
+            $(this).parents("span").remove();
+        });
+    });
+    $('.selectShow ul,.selectList ul').niceScroll({
+        cursorcolor: "#C3D1E4",//#CC0071 光标颜色
+        cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+        touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+        cursorwidth: "3px", //像素光标的宽度
+        cursorborder: "0", // 游标边框css定义
+        cursorborderradius: "3px",//以像素为光标边界半径
+        autohidemode: false //是否隐藏滚动条
+    });
+</script>
+</body>
+</html>

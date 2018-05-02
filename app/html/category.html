@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>图片类别管理</title>
+    <link rel="stylesheet" href="../css/pretrial.css">
+</head>
+<body>
+     <header>
+         <div class="header-fil">
+             <a href="javascript:void(0)" class="logo" title="易图文"></a>
+             <ul class="header-icon">
+                 <li class="current">
+                     <a href="../html/pretrialPicture.html">
+                         过审图片
+                     </a>
+                 </li>
+                 <li>
+                     <a href="../html/pendingPicture.html">
+                         待审图片
+                     </a>
+                 </li>
+                 <li>
+                     <a href="../html/havePictures.html">
+                         已配图文章
+                     </a>
+                 </li>
+                 <li>
+                     <a href="../html/noPictures.html">
+                         未配图文章
+                     </a>
+                 </li>
+             </ul>
+             <div class="user-icon">
+                 <a href="javascript:void(0)" class="me">
+                     <span>陈编辑</span>
+                 </a>
+                 <div class="icon-show">
+                     <ul>
+                         <li><a href="../html/category.html">设置</a></li>
+                         <li><a href="javascript:void (0)">退出</a></li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </header>
+     <div class="content">
+          <section class="sheets">
+             <span>系统设置</span>>
+             <span>图片类别管理</span>
+         </section>
+            <div class="management">
+                  <section class="manage-left">
+                           <ul>
+                               <li class="pic-gory1 currents"><a href="../html/category.html">图片类别管理</a></li>
+                               <li class="pic-gory2"><a href="../html/article.html">文章标签管理</a></li>
+                               <li class="pic-gory3"><a href="../html/discomfort.html">不适配标签管理</a></li>
+                               <li class="pic-gory4"><a href="../html/statistics.html">统计</a></li>
+                           </ul>
+                  </section>
+                  <section class="manage-right">
+                          <div class="manage-table">
+                              <div class="manage-header">
+                                   <div class="tit-select">
+                                       <label>状态：</label>
+                                       <select class="select1">
+                                           <option>全部</option>
+                                           <option>启用</option>
+                                           <option>禁用</option>
+                                       </select>
+                                   </div>
+                                   <div class="pic-input">
+                                       <label>类别:</label>
+                                       <input type="text" placeholder="请输入文字">
+                                       <button>查询</button>
+                                   </div>
+                                  <a href="javascript:void(0)" class="add-table-team" data-title="new-category">+ 新增</a>
+                              </div>
+                              <table class="edtitable">
+                                  <thead class="length-table">
+                                  <tr>
+                                      <th>序号</th>
+                                      <th>类别</th>
+                                      <th>状态</th>
+                                      <th>添加人</th>
+                                      <th>添加时间</th>
+                                      <th class="del-col">操作</th>
+                                  </tr>
+                                  </thead>
+                                  <tbody>
+                                  <tr>
+                                      <td>1</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-disable">禁用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>2</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>3</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>4</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>5</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>6</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>7</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>8</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>9</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>10</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>11</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <td>12</td>
+                                      <td>教育</td>
+                                      <td>启用</td>
+                                      <td>黄编辑</td>
+                                      <td>2017-03-10 00:00</td>
+                                      <td class="del-col">
+                                          <a href="javascript:void(0);" data-title="new-edit">编辑</a>
+                                          <a href="javascript:void(0);" data-title="new-enable">启用</a>
+                                          <a href="javascript:void(0);" data-title="m-delete">删除</a>
+                                      </td>
+                                  </tr>
+                                  </tbody>
+                              </table>
+                              <div class="manage-foot">
+                                  <div class="foot-page clearfix">
+                                      <button class="lastpage">上一页</button>
+                                      <ul>
+                                          <li class="act"><a href="javascript:void(0)">1</a> </li>
+                                          <li><a href="javascript:void(0)">2</a></li>
+                                          <li><a href="javascript:void(0)">3</a></li>
+                                          <li><a href="javascript:void(0)">4</a></li>
+                                          <li><a href="javascript:void(0)">5</a></li>
+                                          <li><a href="javascript:void(0)">6</a></li>
+                                          <li><a href="javascript:void(0)" class="more">...</a></li>
+                                      </ul>
+                                      <button class="nextpage">下一页</button>
+                                      <div class="jump-page">
+                                          跳至
+                                          <input type="text" size="1">
+                                          页
+                                      </div>
+                                      <button class="sure">确定</button>
+                                  </div>
+                              </div>
+                          </div>
+                  </section>
+            </div>
+     </div>
+     <!--弹窗-->
+     <div id="al">
+     <div id="modal">
+         <!--新增类别-->
+         <div class="m-con new-category">
+             <div class="del-header">
+                 <em>新增类别</em>
+                 <a href="javascript:void(0)" class="close"></a>
+             </div>
+             <div class="del-content">
+                 <i style="color: #e60012">*</i>
+                 类别名称：
+                 <input type="text" placeholder="请输入类别名称">
+             </div>
+             <div class="del-footer">
+                 <div class="del-but">
+                     <button class="del-sure alse2">确定</button>
+                     <button class="close alse2">取消</button>
+                 </div>
+             </div>
+         </div>
+         <!--编辑类别名称-->
+         <div class="m-con new-edit">
+             <div class="del-header">
+                 <em>编辑类别</em>
+                 <a href="javascript:void(0)" class="close"></a>
+             </div>
+             <div class="del-content">
+                 <i style="color: #e60012">*</i>
+                 类别名称：
+                 <input type="text" value="教育">
+             </div>
+             <div class="del-footer">
+                 <div class="del-but">
+                     <button class="del-sure alse2">确定</button>
+                     <button class="close alse2">取消</button>
+                 </div>
+             </div>
+         </div>
+         <!--禁用提示-->
+         <div class="m-con new-disable">
+             <div class="del-header">
+                 <em>提示</em>
+                 <a href="javascript:void(0)" class="close"></a>
+             </div>
+             <div class="del-content">
+                 <i class="i-notice"></i>确定要禁用该类别？
+             </div>
+             <div class="del-footer">
+                 <div class="del-but">
+                     <button class="del-sure alse2">确定</button>
+                     <button class="close alse2">取消</button>
+                 </div>
+             </div>
+         </div>
+         <!--启用提示-->
+         <div class="m-con new-enable">
+             <div class="del-header">
+                 <em>提示</em>
+                 <a href="javascript:void(0)" class="close"></a>
+             </div>
+             <div class="del-content">
+                 <i class="i-notice"></i>确定要启用该类别？
+             </div>
+             <div class="del-footer">
+                 <div class="del-but">
+                     <button class="del-sure alse2">确定</button>
+                     <button class="close alse2">取消</button>
+                 </div>
+             </div>
+         </div>
+         <!--删除类别-->
+         <div class="m-con m-delete">
+             <div class="del-header">
+                 <em>删除提示</em>
+                 <a href="javascript:void(0)" class="close"></a>
+             </div>
+             <div class="del-content">
+                 <i class="i-notice"></i>确定要删除该类别？
+             </div>
+             <div class="del-footer">
+                 <div class="del-but">
+                     <button class="del-sure alse2">确定</button>
+                     <button class="close alse2">取消</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div id="modalbg" class="alse2"></div>
+     </div>
+     <script src="../js/jquery-2.1.1.min.js"></script>
+     <script src="../js/picture.js"></script>
+     <script src="../libs/laydate/laydate.js"></script>
+     <script>
+         $(document).ready(function(){
+             myclick('.select1','.select-wrap','.select_inner');
+         });
+     </script>
+</body>
+</html>

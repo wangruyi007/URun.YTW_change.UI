@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>编辑文章</title>
+    <link rel="stylesheet" href="../libs/multsel/multsel.css">
+    <link rel="stylesheet" href="../css/pretrial.css">
+    <script type="text/javascript" charset="utf-8" src="../libs/utf8-net/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../libs/utf8-net/ueditor.all.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="../libs/utf8-net/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+     <header>
+         <div class="header-fil">
+             <a href="javascript:void(0)" class="logo" title="易图文"></a>
+             <ul class="header-icon">
+                 <li>
+                     <a href="../html/pretrialPicture.html">
+                         过审图片
+                     </a>
+                 </li>
+                 <li>
+                     <a href="../html/pendingPicture.html">
+                         待审图片
+                     </a>
+                 </li>
+                 <li class="current">
+                     <a href="../html/havePictures.html">
+                         已配图文章
+                     </a>
+                 </li>
+                 <li>
+                     <a href="../html/noPictures.html">
+                         未配图文章
+                     </a>
+                 </li>
+             </ul>
+             <div class="user-icon">
+                 <a href="javascript:void(0)" class="me">
+                     <span>陈编辑</span>
+                 </a>
+                 <div class="icon-show">
+                     <ul>
+                         <li><a href="../html/category.html">设置</a></li>
+                         <li><a href="javascript:void (0)">退出</a></li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </header>
+     <div class="content">
+          <section class="sheets">
+              <span>已配图文章</span>>
+             <span>编辑文章</span>
+         </section>
+         <div class="article">
+              <div class="article-all">
+                  <div class="a-title">
+                      <p>标题 ：</p>
+                      <input type="text" placeholder="请输入文章标题">
+                  </div>
+                  <div class="baidu-ditor">
+                      <script id="editor" type="text/plain" style="width:862px;height:528px; margin-bottom: 30px;"></script>
+                      <script>
+
+                      var ue = UE.getEditor('editor', {
+                          toolbars: [
+                              [
+                                  'link', //超链接
+                                  'unlink', //取消链接
+                                  '|',
+                                  'forecolor', //字体颜色
+                                  'backcolor', //背景色
+                                  'fontfamily', //字体
+                                  'fontsize', //字号
+                                  '|',
+                                  'bold', //加粗
+                                  'italic', //斜体
+                                  'underline', //下划线
+                                  'strikethrough', //删除线
+                                  '|',
+                                  'formatmatch', //格式刷
+                                  'removeformat', //清除格式
+                                  '|',
+                                  'insertorderedlist', //有序列表
+                                  'insertunorderedlist', //无序列表
+                                  '|',
+                                  'inserttable', //插入表格
+                                  'paragraph', //段落格式
+                                  'simpleupload', //单图上传
+                                  'imagecenter', //居中
+                                  'attachment', //附件
+
+                                  '|',
+                                  'justifyleft', //居左对齐
+                                  'justifycenter', //居中对齐
+                                  'horizontal', //分隔线
+                                  '|',
+                                  'blockquote', //引用
+
+                                  '|',
+                                  'preview', //预览
+                                  'fullscreen', //全屏
+
+                              ]
+                          ],
+                          autoHeightEnabled: true,
+                          autoFloatEnabled: true
+                      });
+
+                      </script>
+
+                      <div class="all-modal">
+                          <div class="new-modal">
+                              <p class="mo-title">推荐标签：</p>
+                              <div class="mo-table">
+                                  <a href="javascript:void(0)" class="curs">广东</a>
+                                  <a href="javascript:void(0)">广州</a>
+                                  <a href="javascript:void(0)">天河</a>
+                                  <a href="javascript:void(0)">广东</a>
+                                  <a href="javascript:void(0)">广州</a>
+                                  <a href="javascript:void(0)">天河</a>
+                                  <a href="javascript:void(0)">天河</a>
+                                  <a href="javascript:void(0)">科技</a>
+                                  <a href="javascript:void(0)">金融</a>
+                                  <a href="javascript:void(0)">招行</a>
+                                  <a href="javascript:void(0)">科技</a>
+                                  <a href="javascript:void(0)">金融</a>
+                                  <a href="javascript:void(0)">招行</a>
+                                  <a href="javascript:void(0)">科技</a>
+                              </div>
+                              <div class="mo-pic">
+                                  <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                  <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                  <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                  <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                  <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                  <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                  <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                  <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                  <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                              </div>
+                              <i class="triangle"></i>
+                          </div>
+                      </div>
+                      <div class="all-modal2">
+                          <div class="new-modal">
+                               <div class="moda-head">
+                                   <b class="current-m" data-title="mo1">自有图库</b>
+                                   <b data-title="mo2">公有图库</b>
+                               </div>
+                               <div class="moda-label">
+                                   <div class="tit-select">
+                                       <label>类别:</label>
+                                       <select class="select1" id="" name="">
+                                           <option value="全部">全部</option>
+                                           <option value="广东">广东</option>
+                                           <option value="广州">广州</option>
+                                           <option value="天河">天河</option>
+                                       </select>
+                                   </div>
+                                   <div class="tit-search input-playc">
+                                       <label>标签：</label>
+                                       <input type="text" placeholder="请输入文字">
+                                   </div>
+                               </div>
+                               <div class="mo-pic">
+                                   <div class="mo1">
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                   </div>
+                                   <div class="mo2">
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                       <a href="javascript:void(0)"><img src="../images/article1.jpg"></a>
+                                   </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="a-title">
+                      <p>链接 ：</p>
+                      <input type="text" placeholder="请输入URL">
+                  </div>
+                  <div class="a-up-pic">
+                      <p>封面图 ：</p>
+                      <div class="a-up-all">
+                          <div class="upload-picture">
+                              <input id="img_input2" multiple="" type="file" accept="image/*" />
+                              <label for="img_input2" id="img_label2">
+                                  <i class="img-style"><img src="../images/upload.png"></i>
+                                  本地上传
+                                  <i class="fa fa-plus fa-lg"></i></label>
+                              <div id="preview_box2"></div>
+
+                          </div>
+                          <p>（提示：仅支持jpg、png格式，文件小于1M方形图）</p>
+                      </div>
+                  </div>
+                  <div class="a-btn">
+                      <a href="javascript:void(0)">保存</a>
+                      <a href="javascript:void(0)">重置</a>
+                      <a href="javascript:void(0)" class="cancel">取消</a>
+                      <a href="javascript:void(0)" class="shenhe1">审核通过</a>
+                      <a href="javascript:void(0)" class="shenhe1">审核不通过</a>
+                  </div>
+              </div>
+         </div>
+        </div>
+      <!--弹窗-->
+     <div id="al">
+         <div id="modal">
+             <!--手机端预览-->
+             <div class="m-con phone-see">
+                 <div class="phone-see2">
+                     <div class="phone-cont">
+                         <div class="phone-one"><img src="../images/ip2.jpg"></div>
+                         <div class="phone-two">
+                             <div class="ph-title">李克强在上海考察：在更大力度改革开放中持续优化营商环境和改善民生</div>
+                             <div class="ph-picture"><img src="../images/ip3.jpg"> </div>
+                             <div class="ph-cont">
+                                 <p>
+                                     新华社北京11月10日电 国务院、中央军委日前公布实施新修订的《中国人民解放军文职人员条例》，自公布之日起施行
+                                 </p>
+                                 <p>
+                                     新修订的《条例》是贯彻习近平强军思想，健全完善军事人力资源政策制度的重大创新成果，是建立统一的文职人员制度的重要基础法规。
+                                 </p>
+                                 <p>
+                                     《条例》着眼实现党在新时代的强军目标，适应军队职能任务需求和国家政策制度创新，遵循军事人力资源建设内在规律，发挥党
+                                 </p>
+                             </div>
+                         </div>
+                     </div>
+                     <a href="javascript:void(0)" class="close"><img src="../images/delete2.png"></a>
+                 </div>
+             </div>
+             <!--电脑预览-->
+             <div class="m-con computer-see">
+                 <div class="computer-see2">
+                     <div class="com-head">
+                         <em>电脑端预览</em>
+                         <a href="javascript:void(0)" class="close"></a>
+                     </div>
+                     <div class="com-body">
+                         <div class="com-body2">
+                             <h2>广州市政协十三届二次会议开幕</h2>
+                             <a href="javascript:void(0)" class="pics"><img src="../images/computer1.jpg"> </a>
+                             <article>
+                                 <p>新华社北京1月11日电中共中央总书记、国家主席、中央军委主席习近平11日上午在中国共产党第十九届中央纪律检查委员会第二次全体会议上
+                                     发表重要讲话。他强调，在中国特色社会主义新时代，完成伟大事业必须靠党的领导，党一定要有新气象新作为。要全面贯彻党的十九大精神，重整行装再出发，以永
+                                     远在路上的执着把全面从严治党引向深入，开创全面从严治党新局面。</p>
+                                 <p>
+                                     习近平指出，深入推进全面从严治党，要全面贯彻党的十九大精神，以新时代中国特色社会主义思想为指导，增强“四个意识”，坚定“四个自信”，紧紧围绕坚持和加强党的全
+                                     面领导，紧紧围绕维护党中央权威和集中统一领导，全面推进党的政治建设、思想建设、组织建设、作风建设、纪律建设，把制度建设贯穿其中，深
+                                     入推进反腐败斗争，在坚持中深化、在深化中发展，
+                                     实现党内政治生态根本好转，不断增强党的创造力、凝聚力、战斗力，为决胜全面建成小康社会、全面建设社会主义现代化国家提供坚强保证。
+                                 </p>
+                                 <p>
+                                     习近平指出，深入推进全面从严治党，要全面贯彻党的十九大精神，以新时代中国特色社会主义思想为指导，增强“四个意识”，坚定“四个自信”，紧紧围绕坚持和加强党的全
+                                     面领导，紧紧围绕维护党中央权威和集中统一领导，全面推进党的政治建设、思想建设、组织建设、作风建设、纪律建设，把制度建设贯穿其中，深
+                                     入推进反腐败斗争，在坚持中深化、在深化中发展，
+                                     实现党内政治生态根本好转，不断增强党的创造力、凝聚力、战斗力，为决胜全面建成小康社会、全面建设社会主义现代化国家提供坚强保证。
+                                 </p>
+                                 <p>
+                                     习近平指出，深入推进全面从严治党，要全面贯彻党的十九大精神，以新时代中国特色社会主义思想为指导，增强“四个意识”，坚定“四个自信”，紧紧围绕坚持和加强党的全
+                                     面领导，紧紧围绕维护党中央权威和集中统一领导，全面推进党的政治建设、思想建设、组织建设、作风建设、纪律建设，把制度建设贯穿其中，深
+                                     入推进反腐败斗争，在坚持中深化、在深化中发展，
+                                     实现党内政治生态根本好转，不断增强党的创造力、凝聚力、战斗力，为决胜全面建成小康社会、全面建设社会主义现代化国家提供坚强保证。
+                                 </p>
+                                 <p>
+                                     习近平指出，深入推进全面从严治党，要全面贯彻党的十九大精神，以新时代中国特色社会主义思想为指导，增强“四个意识”，坚定“四个自信”，紧紧围绕坚持和加强党的全
+                                     面领导，紧紧围绕维护党中央权威和集中统一领导，全面推进党的政治建设、思想建设、组织建设、作风建设、纪律建设，把制度建设贯穿其中，深
+                                     入推进反腐败斗争，在坚持中深化、在深化中发展，
+                                     实现党内政治生态根本好转，不断增强党的创造力、凝聚力、战斗力，为决胜全面建成小康社会、全面建设社会主义现代化国家提供坚强保证。
+                                 </p>
+                             </article>
+                         </div>
+                     </div>
+                     <div class="com-foot"></div>
+                 </div>
+             </div>
+         </div>
+         <div id="modalbg"></div>
+     </div>
+     <script src="../js/jquery-2.1.1.min.js"></script>
+     <script src="../libs/laydate/laydate.js"></script>
+     <script src="../libs/nicescroll/jquery.nicescroll.js"></script>
+     <script>
+        function stopPropagation(e) {
+            var ev = e || window.event;
+            if (ev.stopPropagation) {
+                ev.stopPropagation();
+            }
+            else if (window.event) {
+                window.event.cancelBubble = true;//兼容IE
+            }
+        }
+        $(function(){
+            myclick('.select1','.select-wrap','.select_inner');
+            $('.all-modal2 .mo-pic').find("div").not("div:nth-of-type(1)").hide();
+            $('.all-modal2 .moda-head b').click(function () {
+                $(this).addClass('current-m').siblings().removeClass('current-m');
+                $(this).parents('.all-modal2').find('.'+$(this).attr("data-title")).show().siblings().hide();
+            });
+            $('#edui2').append('<div class="four-btn">'+'</div>');
+            $(".four-btn").append("" +
+                "<a href='javascript:void(0)' class='btn01'><img src='../images/label1.png'></a>" +
+                "<a href='javascript:void(0)' class='btn02'><img src='../images/label2.png' ></a>" +
+                "<a href='javascript:void(0)' data-title='computer-see'><img src='../images/label3.png'></a>" +
+                "<a href='javascript:void(0)' data-title='phone-see'><img src='../images/label4.png'></a>");
+            $(".btn01").click(function (e) {
+                $(".all-modal").toggle();
+                $(".all-modal2").hide();
+                stopPropagation(e);
+            });
+            $(".btn02").click(function (e) {
+                $(".all-modal2").toggle();
+                $(".all-modal").hide();
+                stopPropagation(e);
+            });
+            $(document).bind('click', function () {
+                $(".all-modal").hide();
+                $(".all-modal2").hide();
+            });
+            $(".all-modal").click(function (e) {
+                stopPropagation(e);
+            });
+            $(".all-modal2").click(function (e) {
+                stopPropagation(e);
+            });
+            $('.phone-two').niceScroll({
+                cursorcolor: "#C3D1E4",//#CC0071 光标颜色
+                cursoropacitymax: 1, //改变不透明度非常光标处于活动状态（scrollabar“可见”状态），范围从1到0
+                touchbehavior: false, //使光标拖动滚动像在台式电脑触摸设备
+                cursorwidth: "3px", //像素光标的宽度
+                cursorborder: "0", // 游标边框css定义
+                cursorborderradius: "3px",//以像素为光标边界半径
+                autohidemode: false //是否隐藏滚动条
+            });
+       })
+    </script>
+     <script src="../js/picture.js"></script>
+</body>
+</html>
